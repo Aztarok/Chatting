@@ -1,8 +1,8 @@
+import { WebhookEvent } from "@clerk/backend";
 import { httpRouter } from "convex/server";
-import { httpAction, internalQuery } from "./_generated/server";
 import { Webhook } from "svix";
-import { WebhookEvent } from "@clerk/nextjs/server";
 import { internal } from "./_generated/api";
+import { httpAction } from "./_generated/server";
 
 const validatePayload = async (
     req: Request
